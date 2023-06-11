@@ -1,10 +1,12 @@
-
+import { Container } from "../components/Container/styled";
 
 
 const NotFound = () => {
   return (
     <>
-      <h1>404</h1>
+    <Container>
+      <h1>Oops.. Page not found</h1>
+    </Container>
     </>
   );
 };

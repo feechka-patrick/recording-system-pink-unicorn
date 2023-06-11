@@ -1,6 +1,6 @@
 import Card from "../Card/Card";
-
-import { ReactComponent as CatIcon } from '../../assets/icons/kit-icon.svg';
+import { ReactComponent as CatIcon } from '@assets/icons/kit-icon.svg';
+import { SwayAnimation } from "./styled";
 
 type PropsType = {
     title: string;
@@ -12,7 +12,12 @@ const CardCat = (props: PropsType) => {
   return (
     <>
         <Card {...props}>
-            <CatIcon width="150px" height="150px"/>
+          <SwayAnimation>
+
+            <CatIcon width="150px" 
+              height="150px"
+              />
+          </SwayAnimation>
         </Card>
     </>
   );

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { TextShadowWhite } from '../../styles/styled'
+import { TextShadowWhite } from '@styles/styled'
 
 
 
@@ -8,8 +8,10 @@ export const HeaderWrapper = styled.div`
     background-color: var(--header-background);
     display: flex;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 5%;
+    @media (max-width: 870px) {
+        padding: 0 30px;
+    }
 `
 
 

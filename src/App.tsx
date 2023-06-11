@@ -4,27 +4,38 @@ import Router from './router/Router';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { colors } from './styles/colors';
+import styled from '@emotion/styled';
 
 const theme = createTheme({
   palette: {
     primary: {
-      // Purple and green play nicely together.
       main: colors['accent-text'],
+      contrastText: colors['primary-text'],
     },
     secondary: {
-      // This is green.A700 as hex.
-      main: '#11cb5f',
+      main: colors['primary-text'],
+      contrastText: colors['primary-text'],
+    },
+    background: {
+      paper: colors['main-container-background']
+    },
+    action: {
+      disabled: colors['primary-text']
     },
   },
 });
+
+const ColorProvider = styled.div`color: #fff`;
 
 const App = () => {
 
   return (
     <>
     <ThemeProvider theme={theme}>
-      <Header/>
-      <Router />
+      <ColorProvider>
+        <Header/>
+        <Router />
+      </ColorProvider>
     </ThemeProvider>
     </>
   );

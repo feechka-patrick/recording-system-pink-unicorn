@@ -1,13 +1,14 @@
 import styled from "@emotion/styled";
-import { colors } from "../../../styles/colors";
-import { BoxShadow, TextShadowGreen } from "../../../styles/styled";
+import { colors } from "@styles/colors";
+import { BoxShadow, TextShadowGreen } from "@styles/styled";
 
 
 export const SectionWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 10px;
+    align-self: flex-start;
 `
 
 export const GreenTitle = styled.span`

@@ -1,5 +1,6 @@
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import { Avatar, IconButton, Menu, MenuItem } from "@mui/material";
+import { colors } from "@styles/colors";
 import { useState } from "react";
 
 const UserAvatar = () => {
@@ -35,7 +36,7 @@ const UserAvatar = () => {
         anchorEl={anchorEl}
         anchorOrigin={{
           vertical: "top",
-          horizontal: "right",
+          horizontal: "left",
         }}
         keepMounted
         transformOrigin={{
@@ -45,8 +46,8 @@ const UserAvatar = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>Профиль</MenuItem>
-        <MenuItem onClick={handleClose}>Мои записи</MenuItem>
+        <MenuItem sx={{ color: colors['primary-text'], fontSize: '0.9rem'}} onClick={handleClose}>Профиль</MenuItem>
+        <MenuItem sx={{ color: colors['primary-text'], fontSize: '0.9rem'}} onClick={handleClose}>Мои записи</MenuItem>
       </Menu>
     </>
   );

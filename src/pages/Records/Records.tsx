@@ -1,10 +1,13 @@
-
+import Calendar from "@components/Calendar/Calendar";
+import { Container } from "@components/Container/styled";
 
 
 const Records = () => {
   return (
     <>
-      <h1>CALENDAR</h1>
+    <Container>
+      <Calendar/>
+    </Container>
     </>
   );
 };
