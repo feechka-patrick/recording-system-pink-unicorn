@@ -1,5 +1,6 @@
-import Calendar from "@components/Calendar/Calendar";
-import { Container } from "@components/Container/styled";
+import Calendar from "components/Calendar/Calendar";
+import { Container } from "components/Container/styled";
+
 
 
 const Records = () => {

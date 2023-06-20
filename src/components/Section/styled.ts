@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import { colors } from "@styles/colors";
-import { BoxShadow, TextShadowGreen } from "@styles/styled";
+import { colors } from "styles/colors";
+import { BoxShadow, TextShadowGreen } from "styles/styled";
 
 
 export const SectionWrapper = styled.div`

@@ -1,1 +1,2 @@
-declare module "@components/Calendar/Calendar";
+declare module "@components/*";
+declare module "@styles/colors";

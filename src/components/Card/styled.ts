@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import { colors } from "@styles/colors";
-import { BoxShadow } from "@styles/styled";
+import { colors } from "styles/colors";
+import { BoxShadow } from "styles/styled";
 
 export const CardWrapper = styled.div`
     background-color: ${colors['disabled-text']};

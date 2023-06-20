@@ -1,4 +1,4 @@
-import CardCat from '@components/CardCat/CardCat';
+import CardCat from 'components/CardCat/CardCat';
 import * as S from './styled';
 
 

@@ -20,18 +20,15 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "./src",
-    "paths": {
-      "@components/*": ["components/*"],
-      "@styles/*": ["styles/*"],
-      "@assets/*": ["assets/*"],
-      "@pages/*": ["pages/*"],
-      "@router/*": ["router/*"],
-    },
+    // "paths": {
+    //   "@components/*": ["components/*"],
+    //   "@styles/*": ["styles/*"],
+    //   "@assets/*": ["assets/*"],
+    //   "@pages/*": ["pages/*"],
+    //   "@router/*": ["router/*"],
+    // },
   },
   "include": [
     "src"
   ],
-
-
-
 }

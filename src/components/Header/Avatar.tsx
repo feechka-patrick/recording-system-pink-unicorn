@@ -1,7 +1,7 @@
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import { Avatar, IconButton, Menu, MenuItem } from "@mui/material";
-import { colors } from "@styles/colors";
 import { useState } from "react";
+import { colors } from "styles/colors";
 
 const UserAvatar = () => {
   const [auth, setAuth] = useState(true);
