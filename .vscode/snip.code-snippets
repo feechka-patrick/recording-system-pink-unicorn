@@ -1,0 +1,37 @@
+{
+	"cmp": {
+		"scope": "javascript,typescript",
+		"prefix": "cmp",
+		"body": [
+			"import * as S from './styled';",
+			"",
+			"",
+			"const $1 = () => {",
+			"  return (",
+			"    <>",
+			"      ",
+			"    </>",
+			"  );",
+			"};",
+			"",
+			"export default $1;",
+		],
+		"description": "Creating react component"
+	},
+	"log": {
+		"scope": "javascript,typescript",
+		"prefix": "log",
+		"body": [
+			"console.log($1);",
+		],
+		"description": "Log output to console"
+	},
+	"stdiv": {
+		"scope": "javascript,typescript",
+		"prefix": "stdiv",
+		"body": [
+			"export const $1 = styled.div`$2`",
+		],
+		"description": "Create styled div component"
+	}
+}
