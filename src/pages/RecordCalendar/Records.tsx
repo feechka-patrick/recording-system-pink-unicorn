@@ -1,9 +1,7 @@
 import Calendar from "components/Calendar/Calendar";
 import { Container } from "components/Container/styled";
 
-
-
-const Records = () => {
+const RecordCalendar = () => {
   return (
     <>
     <Container>
@@ -13,4 +11,4 @@ const Records = () => {
   );
 };
 
-export default Records;
+export default RecordCalendar;

@@ -51,7 +51,7 @@
     "@mui/x-date-pickers-pro": "^6.4.0",
     "dayjs": "^1.11.7",
     "effector": "^22.8.6",
-    "effector-react": "^22.5.2",
+    "effector-react": "^22.5.3",
     "moments": "^0.0.2",
     "react-app-rewired": "^2.2.1",
     "tsconfig-paths": "^4.2.0"

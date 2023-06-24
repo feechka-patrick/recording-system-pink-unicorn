@@ -1,5 +1,5 @@
 import Card from "../Card/Card";
-import { ReactComponent as CatIcon } from '@assets/icons/kit-icon.svg';
+import { ReactComponent as CatIcon } from '../../assets/icons/kit-icon.svg';
 import { SwayAnimation } from "./styled";
 
 type PropsType = {

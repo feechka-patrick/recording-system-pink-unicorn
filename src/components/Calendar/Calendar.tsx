@@ -6,7 +6,8 @@ import Tab from "@mui/material/Tab";
 import { useState } from "react";
 
 import * as S from "./styled";
-import { colors } from "@styles/colors";
+import { colors } from "styles/colors";
+
 
 type MachineType = 'dryer' | 'washer';
 type NumberType = 'one' | 'two' | 'three';

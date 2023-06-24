@@ -1,3 +1,6 @@
+import styled from "@emotion/styled";
+import { colors } from "styles/colors";
+
 
 export const CalendarWrapper = styled.div`
   color: #fff; 

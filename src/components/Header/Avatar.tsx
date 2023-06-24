@@ -1,11 +1,14 @@
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import { Avatar, IconButton, Menu, MenuItem } from "@mui/material";
+import { logoutEv } from "auth/model";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { colors } from "styles/colors";
 
 const UserAvatar = () => {
-  const [auth, setAuth] = useState(true);
+  const [auth, setAuth] = useState(false);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const navigate = useNavigate();
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setAuth(event.target.checked);
@@ -18,6 +21,15 @@ const UserAvatar = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const handleRecords = () => {
+    navigate('/records');
+  };
+
+  const handleLogout = () => {
+    navigate('/auth');
+    logoutEv();
+  }
   return (
     <>
       <IconButton
@@ -47,7 +59,8 @@ const UserAvatar = () => {
         onClose={handleClose}
       >
         <MenuItem sx={{ color: colors['primary-text'], fontSize: '0.9rem'}} onClick={handleClose}>Профиль</MenuItem>
-        <MenuItem sx={{ color: colors['primary-text'], fontSize: '0.9rem'}} onClick={handleClose}>Мои записи</MenuItem>
+        <MenuItem sx={{ color: colors['primary-text'], fontSize: '0.9rem'}} onClick={handleRecords}>Мои записи</MenuItem>
+        <MenuItem sx={{ color: colors['primary-text'], fontSize: '0.9rem'}} onClick={() => handleLogout()}>Выход</MenuItem>
       </Menu>
     </>
   );

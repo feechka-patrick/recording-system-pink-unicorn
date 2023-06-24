@@ -31,3 +31,4 @@ export const colors : Record<Colors, string> = {
     'main-container-background': '#222629',
     'header-background': '#222629'
 }
+

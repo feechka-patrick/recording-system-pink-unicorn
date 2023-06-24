@@ -35,6 +35,13 @@ export const Item = styled.div`
     }
 `
 
-export const AvatarWrapper = styled.div`
+export const RightMenuWrapper = styled.div`
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+`
+
+export const IconLogoutWrapper = styled.div`
+    height: 24px;
 `

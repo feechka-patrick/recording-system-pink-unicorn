@@ -8,6 +8,8 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
+// const useParams = ReactRouterDOM.useParams;
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>

@@ -1,11 +1,15 @@
 import * as S from "./styled";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import Divider from "@mui/material/Divider";
 import UserAvatar from "./Avatar";
-
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+import Tooltip from "@mui/material/Tooltip";
+import { logoutEv } from "auth/model";
 
 const Header = () => {
-
+  const handleLogout = () => {
+    logoutEv();
+  }
 
   return (
     <>
@@ -22,18 +26,34 @@ const Header = () => {
             </Link>
           </S.ItemWrapper>
           <S.ItemWrapper>
-            <Link to="/faq">
+            <Link to="/info-pages">
               <S.Item>FAQ</S.Item>
             </Link>
           </S.ItemWrapper>
         </S.ItemListWrapper>
 
-        <S.AvatarWrapper>
+        <S.RightMenuWrapper>
           <UserAvatar/>
-        </S.AvatarWrapper>
+          <Tooltip title="Выйти">
+            <Link to='/auth' onClick={() => handleLogout}>
+              <LogoutOutlinedIcon 
+                color="secondary" 
+                sx={
+                  {'&:hover': {
+                  color: '#86c232',
+                  borderRadius: '10px',
+                  cursor: 'pointer'
+                },}
+                } />
+            </Link>
+            
+          </Tooltip>
+          
+        </S.RightMenuWrapper>
+        
         
       </S.HeaderWrapper>
-      <Divider />
+      <Divider sx={{borderColor: '#86c232'}}/>
     </>
   );
 };

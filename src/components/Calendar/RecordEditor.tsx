@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -10,8 +10,8 @@ import type {
   SchedulerHelpers
 } from "@aldabil/react-scheduler/types";
 import * as S from './styled';
-import { GreenTitle } from "@components/Section/styled";
 import dayjs, { Dayjs } from 'dayjs';
+import { GreenTitle } from "components/Section/styled";
 
 interface CustomEditorProps {
   scheduler: SchedulerHelpers;

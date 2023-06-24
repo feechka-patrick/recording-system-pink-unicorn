@@ -1,0 +1,7 @@
+export const ADMIN_ROUTE = '/admin-panel'
+export const LOGIN_ROUTE = '/auth'
+export const MAIN_ROUTE = '/'
+export const CALENDAR_ROUTE = '/calendar'
+export const RECORDS_ROUTE = '/records'
+export const NOT_FOUND_ROUTE = '/*'
+export const INFO_ROUTE = '/info-pages'
